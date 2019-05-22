@@ -63,20 +63,20 @@ export default class BannerHeader extends PureComponent {
           delay={200}
           className={`${className}-title`}
         >
-          <span
+          {/* <span
             key="c"
             className="bannerHeader"
           >
             <img src={row.headerImg} alt="header-banner" />
           </span>
-          <p key="d">{row.content}</p>
+          <p key="d">{row.content}</p> */}
           <QueueAnim
             animation={{ ...yAnim, delay: 500 }}
             delay={300}
             component="ul"
             key="e"
           >
-            {
+            {/* {
               row.button.map(second => (
                 <li key={`li${second.id}`}>
                   <Button
@@ -101,7 +101,7 @@ export default class BannerHeader extends PureComponent {
                   </Button>
                 </li>
               ))
-            }
+            } */}
           </QueueAnim>
         </QueueAnim>
       </Element>

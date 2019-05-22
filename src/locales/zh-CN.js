@@ -20,6 +20,7 @@ import bannerLogo from '../assets/images/banner-logo.png';
 import banner1 from '../assets/images/banner-1.jpg';
 import banner2 from '../assets/images/banner-2.jpg';
 import banner3 from '../assets/images/banner-3.jpg';
+import banner4 from '../assets/images/banner-5.jpg';
 import contactPublic from '../assets/images/contact-public.jpg';
 import contactPrivate from '../assets/images/contact-private.jpg';
 import footerLogo from '../assets/images/footer-logo.png';
@@ -28,6 +29,7 @@ import content3ArticleImg2 from '../assets/images/content3-article-img2.gif';
 import content3ArticleImg3 from '../assets/images/content3-article-img3.gif';
 import content3ArticleImg4 from '../assets/images/content3-article-img4.gif';
 import content3ArticleImg5 from '../assets/images/content3-article-img5.gif';
+
 
 // Date
 const nowYear = new Date().getFullYear();
@@ -43,21 +45,21 @@ export default {
     nav: [
       {
         id: 0,
-        name: 'Home',
+        name: '再生纸缘(Home)',
         isReact: true,
         path: isProd() ? '/' : '',
-        version: 0
+        version: 0,
       },
       {
         id: 1,
-        name: '媒体/项目篇',
+        name: '活动展示',
         isReact: true,
         path: '/media',
         dot: true
       },
       {
         id: 2,
-        name: '背景篇',
+        name: '新闻资讯',
         isReact: false,
         path: '/1.x/about',
         url: '/1.x/about',
@@ -65,14 +67,14 @@ export default {
       },
       {
         id: 3,
-        name: '摄影篇',
+        name: '公益图书馆',
         isReact: false,
         url: 'http://photoartlife.lofter.com',
         target: '_blank',
       },
       {
         id: 4,
-        name: '专栏篇',
+        name: '社团合作(专栏篇)',
         isReact: false,
         path: '/1.x/about/works',
         url: '/1.x/about/works',
@@ -121,68 +123,72 @@ export default {
   banner: [
     {
       id: 1,
-      headerImg: bannerLogo,
+      // headerImg: bannerLogo,
       bgImg: banner1,
-      content: '一只拍片码稿、画图写代码的创作者',
-      button: [
-        {
-          id: 'a1',
-          value: '下滑 Get More',
-          icon: '',
-          link: null,
-          target: null,
-          event: true,
-        },
-      ],
+      // content: '一只拍片码稿、画图写代码的创作者',
+      // button: [
+      //   {
+      //     id: 'a1',
+      //     value: '下滑 Get More',
+      //     icon: '',
+      //     link: null,
+      //     target: null,
+      //     event: true,
+      //   },
+      // ],
     },
     {
       id: 2,
-      headerImg: bannerLogo,
+      // headerImg: bannerLogo,
       bgImg: banner2,
-      content: '一个喜欢创作与挑战的独立设计师、程序猿/软件工程师...',
-      button: [
-        {
-          id: 'b2',
-          value: 'Github',
-          icon: 'github',
-          target: '_blank',
-          animate: { x: '+=20' },
-          link: 'https://github.com/PhotoArtLife/blog2.x-mux-club',
-        },
-      ],
+      // content: '一个喜欢创作与挑战的独立设计师、程序猿/软件工程师...',
+      // button: [
+      //   {
+      //     id: 'b2',
+      //     value: 'Github',
+      //     icon: 'github',
+      //     target: '_blank',
+      //     animate: { x: '+=20' },
+      //     link: 'https://github.com/PhotoArtLife/blog2.x-mux-club',
+      //   },
+      // ],
     },
     {
       id: 3,
-      headerImg: bannerLogo,
+      // headerImg: bannerLogo,
       bgImg: banner3,
-      content: '一个信仰和平与自由的摄影师、制片人、自媒体/公路作者...',
-      button: [
-        {
-          id: 'c1',
-          value: 'LOFTER',
-          icon: 'camera',
-          target: '_blank',
-          animate: { x: '+=20' },
-          link: 'http://photoartlife.lofter.com',
-        },
-        {
-          id: 'c2',
-          value: '米拍',
-          icon: 'man',
-          target: '_blank',
-          animate: { x: '+=20', blur: '3px' },
-          link: mePai,
-        },
-        {
-          id: 'c3',
-          value: '500PX',
-          icon: 'html5',
-          target: '_blank',
-          animate: { x: '+=20' },
-          link: 'https://500px.me/PhotoArtLife',
-        },
-      ],
+      // content: '一个信仰和平与自由的摄影师、制片人、自媒体/公路作者...',
+      // button: [
+      //   {
+      //     id: 'c1',
+      //     value: 'LOFTER',
+      //     icon: 'camera',
+      //     target: '_blank',
+      //     animate: { x: '+=20' },
+      //     link: 'http://photoartlife.lofter.com',
+      //   },
+      //   {
+      //     id: 'c2',
+      //     value: '米拍',
+      //     icon: 'man',
+      //     target: '_blank',
+      //     animate: { x: '+=20', blur: '3px' },
+      //     link: mePai,
+      //   },
+      //   {
+      //     id: 'c3',
+      //     value: '500PX',
+      //     icon: 'html5',
+      //     target: '_blank',
+      //     animate: { x: '+=20' },
+      //     link: 'https://500px.me/PhotoArtLife',
+      //   },
+      // ],
     },
+    {
+      id: 4,
+      bgImg: banner4,
+    }
   ],
   content1: {
     text: {

@@ -55,12 +55,12 @@ export default class GlobalHeader extends PureComponent {
         const { ismobile, fixHeader, pathname } = props;
         const contactAuthor = (
             <div className={styles.headerPopoverContent}>
-                <span>社区（连载中） + WeChat</span>
+                {/* <span>社区（连载中） + WeChat</span>
                 <span>UED、技术、摄/电影、媒体等合作</span>
                 <ul>{
                     contact.block.map(row => (<li key={row.id}><img src={row.img} alt={row.alt} /></li>))
                 }
-                </ul>
+                </ul> */}
             </div>
         );
 
@@ -92,21 +92,23 @@ export default class GlobalHeader extends PureComponent {
                 }
             </Item>
         ));
+        console.log("---",navChildren)
 
         navChildren.push(
             <Item className="menu-contact" key="contact">
-                <Popover
+            <div>
+                        <Iconfont type="wechat" size="1x-sm" />
+                        <span>联系作者</span>
+                    </div>
+                {/* <Popover
                     content={contactAuthor}
                     title="百度/谷歌搜索PhotoArtLife，也可以找到作者哈！"
                     trigger="hover"
                     placement={ismobile ? "bottomRight" : "bottom"}
                     arrowPointAtCenter
                 >
-                    <div>
-                        <Iconfont type="wechat" size="1x-sm" />
-                        <span>联系作者</span>
-                    </div>
-                </Popover>
+                    
+                </Popover> */}
             </Item>,
             <SubMenu className="menu-user" title={userTitle} key="user">
                 {
