@@ -46,7 +46,7 @@ from 2016，create a new version 2.x for blog，fit almost all the screens.
 
 ```bash
 #本地开发
-$ git clone git@github.com:PhotoArtLife/blog2.x-mux-club.git 请选择SSH方式
+$ git clone  https://github.com/zhoukaile/recycledpader.git
 $ mkdir your-blog-name -> cd your-blog-name 
 $ npm install
 $ npm start # visit http://localhost:8000
